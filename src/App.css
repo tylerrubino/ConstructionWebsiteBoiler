@@ -1,38 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+    padding: 100px 20px;
+    /* margin-top: 50px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#about {
+    background-color: #f1f1f1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#testimonials {
+    background-color: #e2e2e2;
 }
 
-.App-link {
-  color: #61dafb;
+#contact {
+    background-color: #d3d3d3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url('../public/images/hero-image.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* .hero-content {
+    position: relative;
+    z-index: 2;
+} */
+
+.hero-tagline {
+    background-color: #fd0000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px !important; 
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: #fd0000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.hero-button:hover {
+    background-color: #fff;
+    color: #fd0000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.tag {
+    background-color: #fd0000;
+    border-radius: 25px;
+}
+
+.gradient-text {
+    background: linear-gradient(to bottom, #fd0000, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
